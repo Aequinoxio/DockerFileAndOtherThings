@@ -12,7 +12,8 @@ RUN wget https://raw.githubusercontent.com/Aequinoxio/DockerFileAndOtherThings/a
 
 # RUN echo "/opt/cloudflared/cloudflared proxy-dns --address 0.0.0.0 --port 54 --upstream https://1.1.1.1/.well-known/dns-query --upstream https://1.0.0.1/.well-known/dns-query" > /opt/cloudflared/cloudflared.sh
 
-# RUN chmod 755 /opt/cloudflared/cloudflared.sh
+RUN chmod 755 /opt/cloudflared/cloudflared.sh
+RUN chmod 755 /opt/cloudflared/cloudflared
 
 EXPOSE 54
 
