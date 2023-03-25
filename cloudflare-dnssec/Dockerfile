@@ -18,3 +18,4 @@ RUN chmod 755 /opt/cloudflared/cloudflared
 EXPOSE 54
 
 # CMD ["/bin/bash","/opt/cloudflared/cloudflared.sh"]
+CMD ["/bin/bash","/bin/bash"]
